@@ -1,0 +1,1356 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Atışalanı Kurban - İslami usullere uygun, hijyenik ve güvenilir kurban hizmetleri. Büyükbaş, küçükbaş ve bağış kurbanları.">
+    <title>Atışalanı Kurban | Doğal & Güvenilir Kurban Hizmetleri</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terra: '#800000',
+                        sage: '#600000',
+                        cream: '#FFFDD0',
+                        dark: '#1B1B1B',
+                        gold: '#D4A843',
+                        wheat: '#E9E9E9',
+                        clay: '#A52A2A',
+                        maroon: '#800000',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Amatic SC', 'cursive'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-cream text-dark font-sans antialiased overflow-x-hidden selection:bg-terra selection:text-white">
+
+    <!-- Header / Nav -->
+    <header class="fixed w-full top-0 left-0 z-50 pt-6 px-4 pointer-events-none" id="navbar">
+        <div class="max-w-5xl mx-auto pointer-events-auto">
+            <div class="bg-dark/90 backdrop-blur-md rounded-full border border-white/10 px-2 py-2 flex items-center justify-between shadow-2xl relative overflow-hidden"
+                id="nav-pill">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 pl-4 group">
+                    <div
+                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden shrink-0">
+                        <i class="fa-solid fa-cow text-maroon text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display text-lg font-bold text-white tracking-wide">ATIŞALANI</span>
+                        <span
+                            class="text-gold text-[0.5rem] uppercase tracking-[0.2em] font-medium leading-none">KURBAN</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-8 px-8">
+                    <a href="#hakkimizda"
+                        class="nav-link text-xs font-bold text-white/80 hover:text-white transition-colors uppercase tracking-wider">Hakkımızda</a>
+                    <a href="#hizmetler"
+                        class="nav-link text-xs font-bold text-white/80 hover:text-white transition-colors uppercase tracking-wider">Hizmetlerimiz</a>
+                    <a href="#surec"
+                        class="nav-link text-xs font-bold text-white/80 hover:text-white transition-colors uppercase tracking-wider">Sürecimiz</a>
+                    <a href="#fiyatlar"
+                        class="nav-link text-xs font-bold text-white/80 hover:text-white transition-colors uppercase tracking-wider">Fiyatlandırma</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="flex items-center gap-2">
+                    <a href="tel:+905326482988"
+                        class="hidden md:flex bg-maroon text-white hover:bg-gold hover:text-dark transition-all duration-300 px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest shadow-lg border border-white/20">
+                        Hemen Ara
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn"
+                        class="lg:hidden text-white w-10 h-10 flex items-center justify-center focus:outline-none bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                        <div class="flex flex-col gap-1.5 items-center justify-center">
+                            <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                            <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                            <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-full bg-dark/95 backdrop-blur-2xl z-[60] flex flex-col items-center justify-center transition-all duration-500 translate-x-full pointer-events-auto">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-white text-3xl p-4">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav class="flex flex-col items-center gap-8 w-full px-8">
+                <a href="#hakkimizda"
+                    class="mobile-link text-3xl font-serif font-bold text-white hover:text-gold transition-all text-center">Hakkımızda</a>
+                <a href="#hizmetler"
+                    class="mobile-link text-3xl font-serif font-bold text-white hover:text-gold transition-all text-center">Hizmetlerimiz</a>
+                <a href="#surec"
+                    class="mobile-link text-3xl font-serif font-bold text-white hover:text-gold transition-all text-center">Sürecimiz</a>
+                <a href="#fiyatlar"
+                    class="mobile-link text-3xl font-serif font-bold text-white hover:text-gold transition-all text-center">Fiyatlandırma</a>
+                <a href="tel:+905326482988"
+                    class="mt-12 px-12 py-4 rounded-full bg-gold text-maroon font-black text-xl shadow-2xl hover:bg-white hover:scale-105 transition-all text-center">Hemen
+                    Ara</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-start pt-12 overflow-hidden bg-transparent" id="hero">
+        <!-- Premium Background Layers -->
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,#e8f3ee,transparent_50%)]">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_80%,#f9f1e7,transparent_50%)]">
+            </div>
+        </div>
+
+        <!-- Subtle Animated Elements -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-sage/5 rounded-full blur-[100px] animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-terra/5 rounded-full blur-[120px] animate-pulse"
+            style="animation-delay: 2s;"></div>
+
+        <div class="container mx-auto px-4 z-20 relative pt-12 pb-10">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto justify-start mt-0">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-sm shadow-md border border-terra/20 mb-8 animate-float"
+                    data-aos="fade-down" data-aos-duration="1000">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-maroon opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-maroon"></span>
+                    </span>
+                    <span class="text-dark text-sm font-bold tracking-wide">2026 Rezervasyonları Başladı</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-sans font-black text-dark leading-[1.1] mb-8 uppercase tracking-tight"
+                    data-aos="zoom-in" data-aos-duration="1200">
+                    Doğal & Güvenilir <br />
+                    <span class="text-terra inline-block animate-text-reveal opacity-0">Kurban Çiftliği</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-dark/70 mb-12 font-bold max-w-2xl leading-relaxed font-sans"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    Hayvanlarımızı kendi çiftliğimizde, doğal besiyle yetiştiriyor; İslami usullere uygun,
+                    veteriner kontrollü ve şeffaf bir hizmet sunuyoruz.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center gap-6" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="400">
+                    <a href="#fiyatlar"
+                        class="w-full sm:w-auto px-10 py-5 rounded-full bg-terra text-white font-bold text-xl hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(128,0,0,0.3)] hover:bg-dark transition-all duration-300 flex items-center justify-center gap-3 group">
+                        <i class="fa-solid fa-paw group-hover:rotate-12 transition-transform"></i> Kurbanlıkları İncele
+                    </a>
+                    <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                        target="_blank"
+                        class="w-full sm:w-auto px-10 py-5 rounded-full bg-white border-2 border-terra/30 text-dark font-semibold text-xl hover:border-terra hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group">
+                        <i
+                            class="fa-brands fa-whatsapp text-green-600 text-2xl group-hover:scale-110 transition-transform"></i>
+                        WhatsApp'tan Sor
+                    </a>
+                </div>
+
+                <!-- Circular Rotating Badge (Repositioned) -->
+                <div
+                    class="absolute -bottom-20 -right-10 md:right-10 w-32 h-32 opacity-40 hover:opacity-100 transition-opacity duration-500 animate-spin-slow pointer-events-none hidden md:block">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <defs>
+                            <path id="circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                        </defs>
+
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20ba%C4%9F%C4%B1%C5%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+            target="_blank"
+            class="fixed bottom-24 right-8 w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl z-[98] hover:scale-110 transition-transform group">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span
+                class="absolute right-16 bg-white text-dark text-sm font-bold px-4 py-2 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Bilgi
+                ve Rezervasyon</span>
+        </a>
+    </section>
+
+    <!-- Geri Sayım -->
+    <section id="geri-sayim"
+        class="relative overflow-hidden bg-gradient-to-br from-maroon via-terra to-sage py-20 text-white sm:py-24">
+        <div class="absolute inset-0 opacity-[0.12]"
+            style="background-image:radial-gradient(circle at 1px 1px, rgba(255,255,255,0.9) 1px, transparent 0);background-size:24px 24px"
+            aria-hidden="true"></div>
+        <div class="absolute -left-20 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-gold/20 blur-3xl"></div>
+        <div class="absolute -right-20 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-cream/20 blur-3xl"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="mx-auto max-w-3xl text-center">
+                <div
+                    class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold tracking-wider backdrop-blur uppercase">
+                    <i class="fa-regular fa-clock"></i> 2026 KURBAN BAYRAMI'NA
+                </div>
+                <h2 class="font-sans font-black text-4xl sm:text-6xl uppercase tracking-tight text-white mb-3">Geri
+                    Sayım Başladı</h2>
+                <p class="mt-3 text-white/80 text-lg font-medium">Kurban hisseniz için planlamanızı şimdiden yapın.
+                    Sorularınız için bize ulaşın.</p>
+                <div class="mt-10 grid grid-cols-4 gap-3 sm:gap-5">
+                    <div
+                        class="relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-5">
+                        <div class="flex justify-center gap-0.5 font-sans font-black tabular-nums text-4xl sm:text-6xl"
+                            id="days">00</div>
+                        <div class="mt-2 text-[11px] font-bold uppercase tracking-wider text-white/75 sm:text-xs">Gün
+                        </div>
+                    </div>
+                    <div
+                        class="relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-5">
+                        <div class="flex justify-center gap-0.5 font-sans font-black tabular-nums text-4xl sm:text-6xl"
+                            id="hours">00</div>
+                        <div class="mt-2 text-[11px] font-bold uppercase tracking-wider text-white/75 sm:text-xs">Saat
+                        </div>
+                    </div>
+                    <div
+                        class="relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-5">
+                        <div class="flex justify-center gap-0.5 font-sans font-black tabular-nums text-4xl sm:text-6xl"
+                            id="minutes">00</div>
+                        <div class="mt-2 text-[11px] font-bold uppercase tracking-wider text-white/75 sm:text-xs">Dakika
+                        </div>
+                    </div>
+                    <div
+                        class="relative overflow-hidden rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-5">
+                        <div class="flex justify-center gap-0.5 font-sans font-black tabular-nums text-4xl sm:text-6xl"
+                            id="seconds">00</div>
+                        <div class="mt-2 text-[11px] font-bold uppercase tracking-wider text-white/75 sm:text-xs">Saniye
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                    target="_blank" rel="noopener noreferrer"
+                    class="mt-10 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-bold text-maroon shadow-soft transition hover:-translate-y-1 hover:bg-gold hover:text-white">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Hemen Bilgi Al
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function getNextTargetDate() {
+            let year = 2026;
+            let date = new Date(`May 27, ${year} 00:00:00`).getTime();
+            while (date <= new Date().getTime()) {
+                year += 1;
+                date = new Date(`May 27, ${year} 00:00:00`).getTime();
+            }
+            return date;
+        }
+        let targetDate = getNextTargetDate();
+        const elements = {
+            days: document.getElementById("days"),
+            hours: document.getElementById("hours"),
+            minutes: document.getElementById("minutes"),
+            seconds: document.getElementById("seconds")
+        };
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            let diff = targetDate - now;
+            if (diff <= 0) {
+                targetDate = getNextTargetDate();
+                diff = targetDate - now;
+            }
+            const timeUnits = {
+                days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+                seconds: Math.floor((diff % (1000 * 60)) / 1000)
+            };
+            if (elements.days) {
+                elements.days.innerText = String(timeUnits.days).padStart(2, '0');
+                elements.hours.innerText = String(timeUnits.hours).padStart(2, '0');
+                elements.minutes.innerText = String(timeUnits.minutes).padStart(2, '0');
+                elements.seconds.innerText = String(timeUnits.seconds).padStart(2, '0');
+            }
+        };
+        updateCountdown();
+        const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
+
+    <!-- Features Overview -->
+    <section class="py-16 bg-cream relative z-30">
+        <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-cream to-transparent"></div>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+                <div class="feature-card group bg-maroon rounded-3xl p-6 text-left shadow-sm hover:shadow-md border border-maroon/50 hover:border-gold/30 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="w-10 h-10 bg-cream/20 rounded-full flex items-center justify-center mb-4 text-cream text-lg">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-cream mb-2">İslami Uygunluk</h3>
+                    <p class="text-sm text-cream/80 leading-relaxed">Fıkhi esaslara uygun, ehil kasaplar eliyle kesim.
+                    </p>
+                </div>
+
+                <div class="feature-card group bg-maroon rounded-3xl p-6 text-left shadow-sm hover:shadow-md border border-maroon/50 hover:border-gold/30 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-10 h-10 bg-cream/20 rounded-full flex items-center justify-center mb-4 text-cream text-lg">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-cream mb-2">Veteriner Kontrolü</h3>
+                    <p class="text-sm text-cream/80 leading-relaxed">Her hayvan kesim öncesi sağlık muayenesinden geçer.
+                    </p>
+                </div>
+
+                <div class="feature-card group bg-maroon rounded-3xl p-6 text-left shadow-sm hover:shadow-md border border-maroon/50 hover:border-gold/30 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-10 h-10 bg-cream/20 rounded-full flex items-center justify-center mb-4 text-cream text-lg">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-cream mb-2">Doğal Beslenme</h3>
+                    <p class="text-sm text-cream/80 leading-relaxed">Otlak ve doğal yemle beslenen sağlıklı hayvanlar.
+                    </p>
+                </div>
+
+                <div class="feature-card group bg-maroon rounded-3xl p-6 text-left shadow-sm hover:shadow-md border border-maroon/50 hover:border-gold/30 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-10 h-10 bg-cream/20 rounded-full flex items-center justify-center mb-4 text-cream text-lg">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-cream mb-2">20+ Yıl Tecrübe</h3>
+                    <p class="text-sm text-cream/80 leading-relaxed">Binlerce memnun aileye güvenle hizmet veriyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-24 bg-cream relative" id="hizmetler">
+        <!-- Decor -->
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-terra/30 to-transparent">
+        </div>
+        <div class="absolute top-40 right-0 w-96 h-96 bg-sage/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-20 left-10 text-terra/5 text-[200px] pointer-events-none font-display leading-none">
+            Koyun</div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-terra uppercase tracking-[0.3em] text-sm font-bold mb-3 block">HİZMETLERİMİZ</span>
+                <h2 class="text-5xl md:text-6xl font-display font-bold text-dark mb-4">İhtiyacınıza Uygun Çözümler</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-terra via-gold to-sage mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-7xl mx-auto">
+                <!-- Card 1: Büyükbaş Hisseli -->
+                <div class="parent mx-auto" data-aos="fade-up">
+                    <div class="card">
+                        <div class="logo">
+                            <span class="circle circle1"></span>
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                <i class="fa-solid fa-cow text-white"></i>
+                            </span>
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title">Büyükbaş Hisseli</span>
+                            <span class="text">7 kişilik hisselerle, eşit ve adil dağıtım garantili Dana & Manda kurban
+                                hizmeti.</span>
+                        </div>
+                        <div class="bottom">
+                            <div class="social-buttons-container">
+                                <button class="social-button"><i
+                                        class="fa-solid fa-scale-balanced text-[10px] text-terra"></i></button>
+                                <button class="social-button"><i
+                                        class="fa-solid fa-box-open text-[10px] text-terra"></i></button>
+                            </div>
+                            <div class="view-more">
+                                <a href="#fiyatlar" class="view-more-button"
+                                    onclick="switchTab('hisseli'); document.getElementById('fiyatlar').scrollIntoView({behavior: 'smooth'}); return false;">Detayları
+                                    Gör</a>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Küçükbaş Kurban -->
+                <div class="parent mx-auto" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card">
+                        <div class="logo">
+                            <span class="circle circle1"></span>
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                <i class="fa-solid fa-paw text-white"></i>
+                            </span>
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title">Küçükbaş Kurban</span>
+                            <span class="text">Özenle seçilmiş, yerli besi
+                                kıvırcık ve merinos türü küçükbaş hayvanlar.</span>
+                        </div>
+                        <div class="bottom">
+                            <div class="social-buttons-container">
+                                <button class="social-button"><i
+                                        class="fa-solid fa-leaf text-[10px] text-sage"></i></button>
+                                <button class="social-button"><i
+                                        class="fa-solid fa-scissors text-[10px] text-sage"></i></button>
+                            </div>
+                            <div class="view-more">
+                                <a href="#fiyatlar" class="view-more-button"
+                                    onclick="switchTab('kucukbas'); document.getElementById('fiyatlar').scrollIntoView({behavior: 'smooth'}); return false;">Detayları
+                                    Gör</a>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Adak & Bağış -->
+                <div class="parent mx-auto" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <div class="logo">
+                            <span class="circle circle1"></span>
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                <i class="fa-solid fa-hand-holding-heart text-white"></i>
+                            </span>
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title">Adak & Bağış</span>
+                            <span class="text">Yurt içi ve yurt dışı ihtiyaç
+                                sahiplerine ulaştırılmak üzere vekaletle kesim.</span>
+                        </div>
+                        <div class="bottom">
+                            <div class="social-buttons-container">
+                                <button class="social-button"><i
+                                        class="fa-solid fa-heart text-[10px] text-clay"></i></button>
+                                <button class="social-button"><i
+                                        class="fa-solid fa-video text-[10px] text-clay"></i></button>
+                            </div>
+                            <div class="view-more">
+                                <a href="#fiyatlar" class="view-more-button"
+                                    onclick="switchTab('bagis'); document.getElementById('fiyatlar').scrollIntoView({behavior: 'smooth'}); return false;">Bağış
+                                    Yap</a>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section class="py-24 bg-cream relative overflow-hidden" id="hakkimizda">
+        <div
+            class="absolute top-20 right-0 text-terra/5 text-[180px] pointer-events-none font-display leading-none select-none">
+            Çiftlik</div>
+        <div class="absolute -bottom-10 left-10 w-72 h-72 bg-sage/10 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" class="relative">
+                    <div onclick="openVideoModal()"
+                        class="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-terra/20 aspect-square border-4 border-wheat group cursor-pointer">
+                        <video autoplay loop muted playsinline
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                            <source src="Atışalanı kurban.mp4" type="video/mp4">
+                        </video>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-dark/40 via-dark/10 to-transparent pointer-events-none">
+                        </div>
+
+                        <!-- Decorative Play Overlay -->
+                        <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                            <div
+                                class="w-24 h-24 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+                                <i class="fa-solid fa-play text-white/90 text-4xl ml-2 drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Counter badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-maroon/95 backdrop-blur-xl border border-white/20 text-white rounded-[2.5rem] p-6 pr-8 shadow-2xl"
+                        data-aos="zoom-in" data-aos-delay="200">
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-16 h-16 bg-white/10 rounded-[1.25rem] flex items-center justify-center border border-white/20 shadow-inner">
+                                <i class="fa-solid fa-users text-3xl text-gold drop-shadow-md"></i>
+                            </div>
+                            <div>
+                                <p class="text-5xl font-display font-bold tracking-wider text-gold drop-shadow-sm">2000+
+                                </p>
+                                <p class="text-sm font-medium tracking-wide opacity-90 uppercase mt-1">Mutlu Müşteri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <span class="text-terra uppercase tracking-[0.3em] text-sm font-bold mb-3 block">HAKKIMIZDA</span>
+                    <h2 class="text-5xl md:text-6xl font-display font-bold text-dark mb-6 leading-tight">Doğal
+                        Besi,<br>Geleneksel Değer</h2>
+                    <p class="text-dark/70 text-lg mb-6 leading-relaxed">
+                        2005 yılından bu yana İstanbul'da hizmet veren Atışalanı Kurban, kendi besi çiftliğinde
+                        yetiştirdiği hayvanlarla güvenilir kurban hizmeti sunar.
+                    </p>
+                    <p class="text-dark/60 mb-8 leading-relaxed">
+                        Tüm kurbanlıklarımız veteriner hekim kontrolünde, İslami usullere uygun, hijyenik tesislerde
+                        kesilir.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-white rounded-2xl px-5 py-3 border border-wheat">
+                            <i class="fa-solid fa-seedling text-sage text-xl"></i>
+                            <span class="text-dark font-medium">Doğal Besi</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white rounded-2xl px-5 py-3 border border-wheat">
+                            <i class="fa-solid fa-certificate text-gold text-xl"></i>
+                            <span class="text-dark font-medium">Veteriner Onaylı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Timeline -->
+    <section class="py-24 bg-cream relative overflow-hidden" id="surec">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-terra/30 to-transparent">
+        </div>
+        <div
+            class="absolute top-1/2 left-0 w-64 h-64 bg-sage/10 rounded-full blur-[80px] -translate-y-1/2 -translate-x-1/2">
+        </div>
+        <div
+            class="absolute top-1/2 right-0 w-96 h-96 bg-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3">
+        </div>
+        <div
+            class="absolute bottom-10 right-10 text-sage/10 text-[150px] pointer-events-none font-display leading-none select-none">
+            Süreç</div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-terra uppercase tracking-[0.3em] text-sm font-bold mb-3 block">SÜRECİMİZ</span>
+                <h2 class="text-5xl md:text-6xl font-display font-bold text-dark mb-4">Baştan Sona Şeffaflık</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-terra via-gold to-sage mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="relative border-l-2 border-terra/30 ml-6 md:ml-0 md:border-l-0 md:border-t-0 space-y-12 timeline-container">
+
+                    <!-- Step 1 -->
+                    <div class="relative pl-10 md:pl-0 timeline-item md:flex md:items-start md:gap-12"
+                        data-aos="fade-up">
+                        <div
+                            class="md:w-1/2 md:text-right md:pr-12 md:ml-0 ml-4 flex flex-col items-center md:items-end text-center md:text-right">
+                            <div
+                                class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-terra/10 text-terra text-2xl mb-3">
+                                <i class="fa-solid fa-hand-pointer"></i>
+                            </div>
+                            <h3 class="text-3xl font-display text-dark font-bold mb-2">1. Seçim ve Vekalet</h3>
+                            <p class="text-dark/60 leading-relaxed">Tesisimizde kurbanlığınızı seçer veya online olarak
+                                vekaletinizi verirsiniz. İslami usullere göre vekalet onayı alınır.</p>
+                        </div>
+                        <div
+                            class="absolute top-0 left-[-9px] md:left-auto md:relative md:mt-6 w-6 h-6 rounded-full bg-cream border-4 border-terra shadow-[0_0_10px_rgba(196,92,38,0.5)] z-10 timeline-dot shrink-0">
+                        </div>
+                        <div class="hidden md:block md:w-1/2"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative pl-10 md:pl-0 timeline-item md:flex md:items-start md:gap-12"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="hidden md:block md:w-1/2 md:text-right md:pr-12"></div>
+                        <div
+                            class="absolute top-0 left-[-9px] md:left-auto md:relative md:mt-6 w-6 h-6 rounded-full bg-cream border-4 border-terra shadow-[0_0_10px_rgba(196,92,38,0.5)] z-10 timeline-dot shrink-0">
+                        </div>
+                        <div
+                            class="md:w-1/2 md:pl-12 ml-4 md:ml-0 flex flex-col items-center md:items-start text-center md:text-left">
+                            <div
+                                class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-sage/20 text-sage text-2xl mb-3">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <h3 class="text-3xl font-display text-dark font-bold mb-2">2. Sağlık Kontrolü</h3>
+                            <p class="text-dark/60 leading-relaxed">Uzman veteriner hekimlerimiz tarafından kesim öncesi
+                                son sağlık taramaları titizlikle yapılır.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative pl-10 md:pl-0 timeline-item md:flex md:items-start md:gap-12"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="md:w-1/2 md:text-right md:pr-12 md:ml-0 ml-4 flex flex-col items-center md:items-end text-center md:text-right">
+                            <div
+                                class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gold/20 text-gold text-2xl mb-3">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <h3 class="text-3xl font-display text-dark font-bold mb-2">3. İslami Kesim & Video</h3>
+                            <p class="text-dark/60 leading-relaxed">Dualar eşliğinde, hijyenik mezbahamızda profesyonel
+                                kasaplarca kesim yapılır. O an video ile kayıt altına alınarak size iletilir.</p>
+                        </div>
+                        <div
+                            class="absolute top-0 left-[-9px] md:left-auto md:relative md:mt-6 w-6 h-6 rounded-full bg-cream border-4 border-gold shadow-[0_0_10px_rgba(212,168,67,0.5)] z-10 timeline-dot shrink-0">
+                        </div>
+                        <div class="hidden md:block md:w-1/2"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative pl-10 md:pl-0 timeline-item md:flex md:items-start md:gap-12"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="hidden md:block md:w-1/2 md:text-right md:pr-12"></div>
+                        <div
+                            class="absolute top-0 left-[-9px] md:left-auto md:relative md:mt-6 w-6 h-6 rounded-full bg-terra border-4 border-white shadow-[0_0_15px_rgba(196,92,38,0.8)] z-10 timeline-dot-final shrink-0">
+                        </div>
+                        <div
+                            class="md:w-1/2 md:pl-12 ml-4 md:ml-0 flex flex-col items-center md:items-start text-center md:text-left">
+                            <div
+                                class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-maroon/10 text-maroon text-2xl mb-3">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <h3 class="text-3xl font-display text-dark font-bold mb-2">4. Paketleme ve Teslimat</h3>
+                            <p class="text-dark/60 leading-relaxed">Etler dinlendirildikten sonra eşit parçalara
+                                ayrılır, paketlenir ve soğuk zincir bozulmadan teslim edilir.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-24 bg-maroon relative overflow-hidden" id="fiyatlar">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span
+                    class="text-gold uppercase tracking-[0.3em] text-[0.65rem] font-bold mb-3 block px-4 py-1 bg-white/10 rounded-full w-fit mx-auto">KURBAN
+                    KATEGORİLERİMİZ</span>
+                <h2 class="text-5xl md:text-6xl font-serif font-bold text-white mb-4">Kurban Kategorilerimiz</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-terra via-maroon to-gold mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex justify-center mb-16">
+                <div class="inline-flex p-1.5 bg-white rounded-full shadow-lg border border-wheat">
+                    <button onclick="switchTab('hisseli')" id="btn-hisseli"
+                        class="pricing-tab-btn px-8 py-3 rounded-full text-sm font-bold transition-all bg-terra text-white">Hisseli
+                        Kurban</button>
+                    <button onclick="switchTab('kucukbas')" id="btn-kucukbas"
+                        class="pricing-tab-btn px-8 py-3 rounded-full text-sm font-bold transition-all text-dark/60 hover:text-dark">Küçükbaş
+                        Kurban</button>
+                    <button onclick="switchTab('bagis')" id="btn-bagis"
+                        class="pricing-tab-btn px-8 py-3 rounded-full text-sm font-bold transition-all text-dark/60 hover:text-dark">Bağış
+                        Kurban</button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Hisseli -->
+            <div id="tab-hisseli"
+                class="pricing-pane grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-16 max-w-7xl mx-auto pt-12">
+
+                <!-- Hisseli 1 -->
+                <div class="blob-card" data-aos="fade-up">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/büyükbaş1.jpg" alt="Büyükbaş 1. Grup" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Büyükbaş Dana Hisse</p>
+                            <h3 class="card-title">1. Grup</h3>
+                            <p class="card-desc">7 hisseli hassas terazi ile tartım. İslami usullere uygun kesim.</p>
+                            <div class="card-price">30.000₺ – 35.000₺</div>
+                            <span class="card-badge bg-green-100 text-green-700">
+                                <i class="fa-solid fa-circle"></i> Uygun
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 7 Hisseli Hassas Terazi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 1. Gün Yerinden Teslim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik Kesim</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20hisseli%20kurban%20dan%201.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hisseli 2 -->
+                <div class="blob-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/büyükbaş2.jpg" alt="Büyükbaş 2. Grup" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Büyükbaş Dana Hisse</p>
+                            <h3 class="card-title">2. Grup</h3>
+                            <p class="card-desc">7 hisseli hassas terazi ile tartım. İslami usullere uygun kesim.</p>
+                            <div class="card-price">35.000₺ – 40.000₺</div>
+                            <span class="card-badge bg-green-100 text-green-700">
+                                <i class="fa-solid fa-circle"></i> Uygun
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 7 Hisseli Hassas Terazi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 1. Gün Yerinden Teslim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik Kesim</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20hisseli%20kurban%20dan%202.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hisseli 3 -->
+                <div class="blob-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/büyükbaş3.jpg" alt="Büyükbaş 3. Grup" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Büyükbaş Dana Hisse</p>
+                            <h3 class="card-title">3. Grup</h3>
+                            <p class="card-desc">7 hisseli hassas terazi ile tartım. İslami usullere uygun kesim.</p>
+                            <div class="card-price">40.000₺ – 45.000₺</div>
+                            <span class="card-badge bg-orange-100 text-orange-700">
+                                <i class="fa-solid fa-circle"></i> Sınırlı Sayıda
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 7 Hisseli Hassas Terazi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 1. Gün Yerinden Teslim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik Kesim</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20hisseli%20kurban%20dan%203.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hisseli 4 -->
+                <div class="blob-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/büyükbaş4.jpg" alt="Büyükbaş 4. Grup" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Büyükbaş Dana Hisse</p>
+                            <h3 class="card-title">4. Grup</h3>
+                            <p class="card-desc">7 hisseli hassas terazi ile tartım. İslami usullere uygun kesim.</p>
+                            <div class="card-price">45.000₺ ve üzeri</div>
+                            <span class="card-badge bg-red-100 text-red-700">
+                                <i class="fa-solid fa-circle"></i> Kontenjanlı
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 7 Hisseli Hassas Terazi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 1. Gün Yerinden Teslim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik Kesim</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20hisseli%20kurban%20dan%204.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tab Content: Küçükbaş (Hidden) -->
+            <div id="tab-kucukbas"
+                class="pricing-pane hidden grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-16 max-w-6xl mx-auto pt-12">
+
+                <!-- Kucukbas 1 -->
+                <div class="blob-card" data-aos="fade-up">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/küçükbaş1.jpg" alt="Küçükbaş 1. Kategori" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Küçükbaş Kurban</p>
+                            <h3 class="card-title">1. Kategori</h3>
+                            <p class="card-desc">Tek hisse. İslami usullere uygun kesim, 1. gün teslim.</p>
+                            <div class="card-price">19.000₺ – 22.000₺</div>
+                            <span class="card-badge bg-green-100 text-green-700">
+                                <i class="fa-solid fa-circle"></i> Uygun
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik & Steril Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sağlıklı Hayvan Seçimi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hassas Terazi Tartım</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20k%C3%BC%C3%A7%C3%BCkba%C5%9F%20kurban%20dan%201.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kucukbas 2 - Popular -->
+                <div class="blob-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/küçükbaş2.jpg" alt="Küçükbaş 2. Kategori" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label" style="color: #D4A843;">⭐ Popüler</p>
+                            <h3 class="card-title">2. Kategori</h3>
+                            <p class="card-desc">Tek hisse. İslami usullere uygun kesim, 1. gün teslim.</p>
+                            <div class="card-price">22.000₺ – 25.000₺</div>
+                            <span class="card-badge bg-green-100 text-green-700">
+                                <i class="fa-solid fa-circle"></i> Uygun
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik & Steril Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sağlıklı Hayvan Seçimi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hassas Terazi Tartım</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20k%C3%BC%C3%A7%C3%BCkba%C5%9F%20kurban%20dan%202.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kucukbas 3 -->
+                <div class="blob-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blob"></div>
+                    <div class="bg">
+                        <img src="images/küçükbaş3.jpg" alt="Küçükbaş 3. Kategori" class="card-image">
+                        <div class="card-content">
+                            <p class="card-label">Küçükbaş Kurban</p>
+                            <h3 class="card-title">3. Kategori</h3>
+                            <p class="card-desc">Tek hisse. İslami usullere uygun kesim, 1. gün teslim.</p>
+                            <div class="card-price">25.000₺ – 28.000₺</div>
+                            <span class="card-badge bg-orange-100 text-orange-700">
+                                <i class="fa-solid fa-circle"></i> Sınırlı Sayıda
+                            </span>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> İslami Usullere Uygun Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hijyenik & Steril Kesim</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sağlıklı Hayvan Seçimi</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Hassas Terazi Tartım</li>
+                            </ul>
+                            <a href="https://wa.me/905326482988?text=Merhaba%2C%20k%C3%BC%C3%A7%C3%BCkba%C5%9F%20kurban%20dan%203.%20grup%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                target="_blank" class="card-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kayıt & Bilgi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tab Content: Bağış (Hidden) -->
+            <div id="tab-bagis" class="pricing-pane hidden max-w-4xl mx-auto" data-aos="fade-up">
+
+                <!-- Hero intro card -->
+                <div class="bagis-hero-card">
+                    <div class="relative z-10">
+                        <span
+                            class="inline-block text-xs font-black uppercase tracking-widest text-gold mb-3 border border-gold/40 px-3 py-1 rounded-full">Bağış
+                            Kurban</span>
+                        <h3 class="text-3xl font-black text-dark mb-3">İhtiyaç Sahiplerine Ulaştırılıyor</h3>
+                        <p class="text-dark/70 text-sm leading-relaxed font-bold max-w-lg">Kesiminiz vekaletle yapılır,
+                            etler Türkiye'deki veya yurt dışındaki ihtiyaç sahiplerine titizlikle dağıtılır. Her adım
+                            şeffaf ve belgelidir.</p>
+                        <div class="mt-5 flex items-center gap-4">
+                            <div class="text-3xl font-black text-terra">14.000₺</div>
+                            <span class="text-dark/40 text-sm font-bold">/ bağış hissesi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature cards grid -->
+                <div class="bagis-grid">
+                    <div class="bagis-card">
+                        <div class="bagis-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h4>Vekaletle Kesim</h4>
+                        <p>Sizin adınıza isminiz okunarak, İslami usullere tam uygun şekilde dualar eşliğinde kesim
+                            yapılır.</p>
+                    </div>
+                    <div class="bagis-card">
+                        <div class="bagis-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h4>Veteriner Kontrollü</h4>
+                        <p>Tüm hayvanlar kesim öncesi uzman veteriner hekim tarafından sağlık muayenesinden geçirilir.
+                        </p>
+                    </div>
+                    <div class="bagis-card">
+                        <div class="bagis-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                        <h4>Yurt İçi & Yurt Dışı Dağıtım</h4>
+                        <p>Etler Türkiye'deki veya uluslararası ihtiyaç sahiplerine güvenilir dağıtım ağımız
+                            aracılığıyla ulaştırılır.</p>
+                    </div>
+                    <div class="bagis-card">
+                        <div class="bagis-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                        <h4>Şeffaf Dağıtım Raporu</h4>
+                        <p>Kesim ve dağıtım süreci tamamlandıktan sonra size detaylı bir rapor ve fotoğraf ile bilgi
+                            verilir.</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-8 text-center">
+                    <a href="https://wa.me/905326482988?text=Merhaba%2C%20kurban%20ba%C4%9F%C4%B1%C5%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                        target="_blank"
+                        class="inline-flex items-center gap-3 px-10 py-4 bg-gold text-maroon font-black rounded-full shadow-xl hover:bg-white hover:-translate-y-1 transition-all duration-300 text-sm">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Bağış Hakkında Bilgi Al
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            <p class="text-center text-xs text-dark/40 mt-10 font-bold italic">* Fiyat aralıkları bilgilendirme
+                amaçlıdır. Güncel bilgi ve detaylar için WhatsApp üzerinden iletişime geçiniz.</p>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-cream relative overflow-hidden" id="sss">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-terra uppercase tracking-[0.3em] text-sm font-bold mb-3 block">SIKÇA SORULAN
+                    SORULAR</span>
+                <h2 class="text-5xl font-serif font-bold text-dark mb-4">Aklınıza Takılanlar</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-terra via-gold to-sage mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="faq-item group bg-white rounded-2xl border border-wheat overflow-hidden transition-all duration-300"
+                    data-aos="fade-up">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-bold text-dark">Kurban vekaleti nasıl verilir?</span>
+                        <i class="fa-solid fa-plus text-terra transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="pb-6 text-dark/70 leading-relaxed">Vekaletinizi tesisimize bizzat gelerek veya telefon
+                            üzerinden sesli onay ile verebilirsiniz. Kesim anında isminiz okunarak dualar eşliğinde
+                            vekaletiniz yerine getirilir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item group bg-white rounded-2xl border border-wheat overflow-hidden transition-all duration-300"
+                    data-aos="fade-up">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-bold text-dark">Hisse dağıtımı nasıl yapılıyor?</span>
+                        <i class="fa-solid fa-plus text-terra transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="pb-6 text-dark/70 leading-relaxed">Hisseli kurbanlarda her bir parça (et, sakatat,
+                            yağ) hassas terazilerde tartılarak 7 eşit parçaya ayrılır. Tüm hissedarlara adil ve eşit
+                            dağıtım garantisi verilir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item group bg-white rounded-2xl border border-wheat overflow-hidden transition-all duration-300"
+                    data-aos="fade-up">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-bold text-dark">Kesim videosu gönderiliyor mu?</span>
+                        <i class="fa-solid fa-plus text-terra transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="pb-6 text-dark/70 leading-relaxed">Evet, kesim anı yüksek çözünürlüklü kameralarla
+                            kayıt altına alınır ve kesim tamamlandıktan kısa bir süre sonra WhatsApp üzerinden size özel
+                            olarak iletilir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item group bg-white rounded-2xl border border-wheat overflow-hidden transition-all duration-300"
+                    data-aos="fade-up">
+                    <button class="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg font-bold text-dark">Teslimat süreci nasıl işliyor?</span>
+                        <i class="fa-solid fa-plus text-terra transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="pb-6 text-dark/70 leading-relaxed">Etleriniz dinlendirildikten sonra hijyenik olarak
+                            vakumlanır. Soğuk zincir araçlarımızla belirttiğiniz adrese randevu saatinde teslim edilir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-cream relative overflow-hidden" id="yorumlar">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-maroon/5 rounded-full blur-[100px]"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-end justify-between mb-16 gap-8" data-aos="fade-up">
+                <div class="max-w-2xl">
+                    <span class="text-maroon uppercase tracking-[0.3em] text-sm font-bold mb-3 block">MEMNUNİYET</span>
+                    <h2 class="text-5xl md:text-7xl font-display font-bold text-dark leading-tight">Yüzlerce
+                        Mutlu<br>Ailemizden Mesajlar</h2>
+                </div>
+                <div class="hidden lg:block">
+                    <div
+                        class="flex items-center gap-4 bg-white px-8 py-6 rounded-[2rem] shadow-xl border border-maroon/10">
+                        <div class="flex -space-x-3">
+                            <div
+                                class="w-12 h-12 rounded-full border-4 border-white bg-maroon flex items-center justify-center text-white text-xs font-bold">
+                                A</div>
+                            <div
+                                class="w-12 h-12 rounded-full border-4 border-white bg-gold flex items-center justify-center text-white text-xs font-bold">
+                                M</div>
+                            <div
+                                class="w-12 h-12 rounded-full border-4 border-white bg-dark flex items-center justify-center text-white text-xs font-bold">
+                                Z</div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-bold text-dark leading-none">4.9/5</span>
+                            <span class="text-xs text-dark/40 font-medium">Genel Memnuniyet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1: Featured -->
+                <div class="lg:col-span-2 bg-maroon rounded-[3rem] p-10 md:p-12 text-white relative overflow-hidden shadow-2xl group"
+                    data-aos="fade-up">
+                    <i
+                        class="fa-solid fa-quote-left absolute top-10 right-12 text-8xl text-white/10 group-hover:rotate-12 transition-transform duration-700"></i>
+                    <div class="relative z-10">
+                        <div class="flex text-gold mb-8 text-xl">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-2xl md:text-3xl font-serif italic mb-10 leading-relaxed text-cream/90">
+                            "Yıllardır kurbanımızı buradan alıyoruz. Hijyen ve İslami usullere verilen önem bizi çok
+                            mutlu ediyor. Video kaydı ise her adımı güvenle takip etmemizi sağlıyor. Gerçekten
+                            profesyonel bir ekip."
+                        </p>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-white text-2xl font-bold backdrop-blur-md border border-white/20">
+                                A</div>
+                            <div>
+                                <h4 class="text-xl font-bold">Ahmet Yılmaz</h4>
+                                <p class="text-white/60 text-sm">İş İnsanı • 5 Yıldır Bizimle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-[3rem] p-10 border border-maroon/5 shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="flex text-gold mb-6 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-dark/70 italic text-lg leading-relaxed mb-8">
+                            "Hisse sistemi çok adil işliyor. Paketleme çok özenliydi, etler soğuk zincir bozulmadan
+                            elimize ulaştı. Teşekkürler Atışalanı ekibi."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-maroon/5 rounded-xl flex items-center justify-center text-maroon font-bold border border-maroon/10">
+                            M</div>
+                        <div>
+                            <h4 class="font-bold text-dark">Mehmet Kaya</h4>
+                            <p class="text-xs text-dark/40 font-medium">Emekli Öğretmen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-[3rem] p-10 border border-maroon/5 shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-col justify-between"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="flex text-gold mb-6 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-dark/70 italic text-lg leading-relaxed mb-8">
+                            "Adak kurbanım için tercih ettim. Vekalet süreci ve kesim videosu anında paylaşıldı. Her şey
+                            şeffaf ve profesyoneldi."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-maroon/5 rounded-xl flex items-center justify-center text-maroon font-bold border border-maroon/10">
+                            Z</div>
+                        <div>
+                            <h4 class="font-bold text-dark">Zeynep Demir</h4>
+                            <p class="text-xs text-dark/40 font-medium">Ev Hanımı</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-maroon text-white relative overflow-hidden" id="iletisim">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div data-aos="fade-right">
+                        <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-6 block">İLETİŞİM</span>
+                        <h2 class="text-6xl md:text-8xl font-display font-bold mb-12 leading-none">Bize<br>Ulaşın</h2>
+
+                        <div class="space-y-6">
+                            <!-- Address Alert -->
+                            <div role="alert"
+                                class="bg-white border-l-4 border-red-600 p-6 rounded-2xl flex items-center gap-6 transition duration-300 ease-in-out hover:bg-red-50 transform hover:scale-[1.02] group shadow-xl">
+                                <div
+                                    class="w-12 h-12 flex-shrink-0 bg-red-600/10 rounded-xl flex items-center justify-center text-red-600 text-xl group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-red-600/60 text-xs font-bold uppercase tracking-widest mb-1">Çiftlik
+                                        Adresi</h4>
+                                    <p class="text-xl font-bold leading-tight text-red-600">Atışalanı mah. Forum Sk. NO:12<br>Esenler
+                                        / İstanbul</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone Alert -->
+                            <div role="alert"
+                                class="bg-white border-l-4 border-red-600 p-6 rounded-2xl flex items-center gap-6 transition duration-300 ease-in-out hover:bg-red-50 transform hover:scale-[1.02] group shadow-xl">
+                                <div
+                                    class="w-12 h-12 flex-shrink-0 bg-red-600/10 rounded-xl flex items-center justify-center text-red-600 text-xl group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-red-600/60 text-xs font-bold uppercase tracking-widest mb-1">Destek
+                                        Hattı</h4>
+                                    <a href="tel:+905326482988"
+                                        class="text-2xl font-bold text-red-600 hover:text-red-800 transition-colors">0532 648 29 88</a>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp Alert -->
+                            <div role="alert"
+                                class="bg-white border-l-4 border-red-600 p-6 rounded-2xl flex items-center gap-6 transition duration-300 ease-in-out hover:bg-red-50 transform hover:scale-[1.02] group shadow-xl">
+                                <div
+                                    class="w-12 h-12 flex-shrink-0 bg-red-600/10 rounded-xl flex items-center justify-center text-red-600 text-xl group-hover:scale-110 transition-transform">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-red-600/60 text-xs font-bold uppercase tracking-widest mb-1">7/24
+                                        Whatsapp</h4>
+                                    <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20ba%C4%9F%C4%B1%C5%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                                        target="_blank"
+                                        class="text-2xl font-bold text-red-600 hover:text-red-800 transition-colors">Mesaj Gönder</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative h-[600px] rounded-[4rem] overflow-hidden border border-white/10 shadow-2xl"
+                        data-aos="fade-left">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.6!2d28.8!3d41.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAzJzM0LjkiTiAyOMKwNDgnMTkuMiJF!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str"
+                            width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <a href="https://maps.google.com/?q=Atışalanı+mah.+Forum+Sk.+NO:12+Esenler+İstanbul"
+                                target="_blank"
+                                class="flex items-center justify-between p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl text-white hover:bg-white hover:text-maroon transition-all group">
+                                <span class="font-bold">Google Haritalarda Aç</span>
+                                <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon pt-24 pb-10 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-20">
+                <!-- Brand Info -->
+                <div class="md:col-span-1">
+                    <a href="#" class="flex items-center gap-4 mb-8 group">
+                        <div class="logo-loader w-12 h-12">
+                            <div class="box"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display text-4xl font-bold text-white tracking-wider">ATIŞALANI
+                                KURBAN</span>
+                            <span class="text-gold text-xs uppercase tracking-[0.4em] font-medium">Kurban
+                                Çiftliği</span>
+                        </div>
+                    </a>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all border border-white/10">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/50 hover:bg-gold hover:text-white transition-all border border-white/10">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-serif font-bold text-white mb-8 uppercase tracking-wider">Hızlı Menü</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#hakkimizda"
+                                class="text-white/50 hover:text-gold transition-colors text-sm font-medium flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i> Hakkımızda</a></li>
+                        <li><a href="#hizmetler"
+                                class="text-white/50 hover:text-gold transition-colors text-sm font-medium flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i> Hizmetlerimiz</a></li>
+                        <li><a href="#surec"
+                                class="text-white/50 hover:text-gold transition-colors text-sm font-medium flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i> Sürecimiz</a></li>
+                        <li><a href="#fiyatlar"
+                                class="text-white/50 hover:text-gold transition-colors text-sm font-medium flex items-center gap-2">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i> Fiyatlandırma</a></li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Quick Action -->
+                <div>
+                    <h4 class="text-lg font-serif font-bold text-white mb-8 uppercase tracking-wider">Hızlı Whatsapp
+                        Hatları</h4>
+                    <div class="space-y-4">
+                        <!-- WhatsApp Alert 1 -->
+                        <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20ba%C4%9F%C4%B1%C5%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                            target="_blank" class="block group">
+                            <div role="alert"
+                                class="bg-white/5 border-l-4 border-gold p-4 rounded-xl flex items-center justify-between transition duration-300 ease-in-out hover:bg-white/10 transform hover:scale-105">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center text-gold">
+                                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-sm font-bold">Büyükbaş Hisse Hattı</p>
+                                        <p class="text-white/40 text-[10px] font-semibold uppercase tracking-wider">7/24
+                                            Aktif</p>
+                                    </div>
+                                </div>
+                                <i
+                                    class="fa-solid fa-chevron-right text-white/20 group-hover:text-gold transition-colors text-xs"></i>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp Alert 2 -->
+                        <a href="https://wa.me/905326482988?text=Merhaba,%20kurban%20ba%C4%9F%C4%B1%C5%9F%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                            target="_blank" class="block group">
+                            <div role="alert"
+                                class="bg-white/5 border-l-4 border-gold p-4 rounded-xl flex items-center justify-between transition duration-300 ease-in-out hover:bg-white/10 transform hover:scale-105">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center text-gold">
+                                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-sm font-bold">Adak & Bağış Hattı</p>
+                                        <p class="text-white/40 text-[10px] font-semibold uppercase tracking-wider">
+                                            Anında Yanıt</p>
+                                    </div>
+                                </div>
+                                <i
+                                    class="fa-solid fa-chevron-right text-white/20 group-hover:text-gold transition-colors text-xs"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/40 text-sm">© 2026 Atışalanı Kurban Çiftliği. Tüm Hakları Saklıdır.</p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-white/40 hover:text-gold transition-colors">Gizlilik Politikası</a>
+                    <a href="#" class="text-white/40 hover:text-gold transition-colors">Şartlar ve Koşullar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal"
+        class="fixed inset-0 z-[100] bg-dark/95 backdrop-blur-xl opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
+        <button onclick="closeVideoModal()"
+            class="absolute top-6 right-6 md:top-10 md:right-10 text-white/50 hover:text-white transition-colors text-4xl z-[101]">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl bg-black rounded-3xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300"
+            id="videoModalContent">
+            <video id="modalVideo" class="w-full h-auto max-h-[85vh] object-contain" controls playsinline>
+                <source src="Atışalanı kurban.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-terra text-white rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-[99] hover:bg-dark hover:-translate-y-2 flex items-center justify-center">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
